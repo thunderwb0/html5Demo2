@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        @keyframes myAnimation {
+            0%{
+                width:100px;
+                height:100px;
+                background: red;
+            }
+            50%{
+                width:200px;
+                height:200px;
+                background: blue;
+                margin-left:400px;
+            }
+            100%{
+                width:100px;
+                height:100px;
+                background: red;
+            }
+        }
+        div{
+            animation:myAnimation 5s ease 3;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

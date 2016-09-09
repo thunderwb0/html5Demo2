@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>圆角border案例</title>
+    <style>
+        #myDiv{
+            width:200px;
+            height:200px;
+            border: 1px solid red;
+            /*border-top-left-radius: 20px;*/
+            /*border-radius: 50%;*/
+            /*border-radius: 1em;*/
+            border-top-left-radius: 40px 80px;
+        }
+        #imgDiv{
+            width:500px;
+            height:150px;
+            border:20px solid black;
+            /*border-image-source: url('images/image_border.png');*/
+            /*border-image-slice: 66 66 66 66;    *//*数据大小和图片相关*/
+            /*border-image-width: 20px;           *//*边框的实际尺寸*/
+            /*border-image-repeat:repeat;*/
+            border-image: url("images/image_border.png") 66 66 66 66/20px repeat;
+        }
+        #menu{
+            width: 180px;
+            height:35px;
+            border:1px solid black;
+            text-align:center;
+            line-height:35px;
+            border-image:url("images/s.png") 5/10px round;
+        }
+    </style>
+</head>
+<body>
+<div id="myDiv">hello</div>
+<div id="imgDiv"></div>
+<div id="menu">首页</div>
+</body>
+</html>

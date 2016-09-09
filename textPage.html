@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文本样式设置</title>
+    <style>
+        .p1{
+            width:180px;
+            height:150px;
+            border:1px solid black;
+            font-size:40px;
+            white-space: nowrap;        /*禁用文字换行*/
+            text-overflow: ellipsis;    /*文字裁剪*/
+            overflow: hidden;           /*隐藏多余的文字*/
+        }
+        .p2{
+            font-size:80px;
+            font-weight: bolder;
+            -webkit-text-stroke:4px red;
+            -moz-text-stroke:4px red;
+            -ms-text-stroke:4px red;
+            -o-text-stroke:4px rd;
+        }
+        p{
+            font-size:80px;
+            font-weight: bolder;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            background-image: linear-gradient(yellow,red 50%,yellow);
+        }
+    </style>
+</head>
+<body>
+<p class="p1">我们正在努力学习前端技术！</p>
+<p class="p2">我是描边的文字</p>
+<p>这是我写的优秀文章</p>
+</body>
+</html>
